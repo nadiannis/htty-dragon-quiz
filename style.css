@@ -1,0 +1,103 @@
+body {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+}
+
+.container {
+    width: 100%;
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 0 30px;
+}
+
+.title h1 {
+    font-family: 'Wendy One', sans-serif;
+    font-size: 28px;
+    text-align: center;
+    padding: 50px 0;
+    color: #222;
+    margin: 0;
+}
+
+.title span {
+    display: block;
+    font-size: 83px;
+    color: #CC333F;
+}
+
+.result {
+    text-align: center;
+    font-size: 19px;
+    font-weight: 300;
+    color: #333;
+    padding: 0 0 25px 0;
+    word-spacing: 2px;
+}
+
+.result span {
+    font-size: 57px;
+    color: #CC333F;
+    padding: 16px;
+    font-family: 'Wendy One', sans-serif;
+}
+
+.quiz {
+    line-height: 1.5;
+    padding: 25px 0;
+    background: #CC333F;
+    color: #efefef;
+    border-bottom: 5px solid #333;
+}
+
+.quiz h2 {
+    font-size: 30px;
+    margin: 45px 0;
+}
+
+.quiz .quiz-form .question {
+    margin: 57px 0;
+}
+
+.quiz .quiz-form .question p {
+    font-size: 22px;
+    margin-bottom: 16px;
+}
+
+.quiz .quiz-form .question label {
+    font-size: 18px;
+}
+
+.quiz .quiz-form .option {
+    margin: 7px;
+    padding-left: 11px;
+}
+
+.quiz .submit-button {
+    text-align: center;
+    margin: 15px 0 42px 0;
+}
+
+.quiz .submit-button input {
+    font-size: 18px;
+    border: none;
+    border-radius: 5px;
+    padding: 14px 18px;
+    color: #4a4a4a;
+    cursor: pointer;
+    box-shadow: 0 3px 6px 0 rgba(0, 0, 0, .2);
+}
+
+.quiz .submit-button input:hover {
+    background: #e3e3e3;
+    box-shadow: none;
+}
+
+.quiz .submit-button input:focus {
+    background: #d3d3d3;
+    box-shadow: none;
+}
+
+.display-none {
+    display: none;
+}
