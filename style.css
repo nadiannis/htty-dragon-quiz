@@ -11,6 +11,24 @@ body {
     padding: 0 30px;
 }
 
+.github-link {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.github-link .bg {
+    fill: #CC333F;
+}
+
+.github-link svg:hover .bg {
+    fill: #222;
+}
+
+.github-link svg .icon {
+    fill: #fff;
+}
+
 .title h1 {
     font-family: 'Wendy One', sans-serif;
     font-size: 28px;
