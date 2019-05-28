@@ -18,4 +18,19 @@ form.addEventListener('submit', e => {
     // Display the score on page
     scrollTo(0, 0);
     result.classList.remove('display-none');  
+
+    // Animate the score
+    let output = 0;
+    const timer = setInterval(() => {
+        result.querySelector('span').textContent = `${output}%`;
+        if (output === score) {
+            clearInterval(timer);
+
+            setTimeout(() => {
+                retake.classList.remove('display-none');
+            }, 350);
+        } else {
+            output++;
+        }
+    }, 15);
 });
