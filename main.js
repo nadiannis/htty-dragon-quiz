@@ -26,9 +26,9 @@ form.addEventListener('submit', e => {
         if (output === score) {
             clearInterval(timer);
 
-            setTimeout(() => {
-                retake.classList.remove('display-none');
-            }, 350);
+            // setTimeout(() => {
+            //     retake.classList.remove('display-none');
+            // }, 350);
         } else {
             output++;
         }
