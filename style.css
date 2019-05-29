@@ -25,6 +25,10 @@ body {
     fill: #222;
 }
 
+.github-link svg:active .bg {
+    fill: #222;
+}
+
 .github-link svg .icon {
     fill: #fff;
 }
@@ -84,11 +88,16 @@ body {
 
 .quiz .quiz-form .question label {
     font-size: 18px;
+    cursor: pointer;
 }
 
 .quiz .quiz-form .option {
     margin: 7px;
     padding-left: 11px;
+}
+
+.quiz .quiz-form .option input[type="radio"] {
+    cursor: pointer;
 }
 
 .quiz .submit-button {
@@ -112,6 +121,7 @@ body {
 }
 
 .quiz .submit-button input:focus {
+    outline: none;
     background: #d3d3d3;
     box-shadow: none;
 }
