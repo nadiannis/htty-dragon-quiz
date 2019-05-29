@@ -129,3 +129,129 @@ body {
 .display-none {
     display: none;
 }
+
+
+/* MEDIA QUERIES */
+
+@media (min-width: 480px) {
+
+    .container {
+        max-width: 400px;
+    }
+
+}
+
+@media (min-width: 530px) {
+
+    .container {
+        max-width: 450px;
+    }
+
+}
+
+@media (min-width: 645px) {
+
+    .container {
+        max-width: 540px;
+    }
+
+}
+
+@media (min-width: 850px) {
+
+    .container {
+        max-width: 720px;
+    }
+
+}
+
+@media (min-width: 1110px) {
+
+    .container {
+        max-width: 960px;
+    }
+
+}
+
+@media (max-width: 480px) {
+
+    .container {
+        max-width: 350px;
+    }
+
+    .title h1 {
+        font-size: 21px;
+        padding: 50px 0;
+    }
+
+    .title span {
+        font-size: 70px;
+    }
+
+    .quiz h2 {
+        font-size: 25px;
+        margin: 35px 0;
+    }
+
+    .quiz .quiz-form .question p {
+        font-size: 20px;
+        margin-bottom: 12px;
+    }
+
+    .quiz .submit-button input {
+        font-size: 17px;
+    }
+
+}
+
+@media (max-width: 429px) {
+
+    .container {
+        max-width: 275px;
+    }
+
+    .title h1 {
+        font-size: 21px;
+        padding: 50px 0 45px 0;
+    }
+
+    .title span {
+        font-size: 60px;
+    }
+
+    .result p {
+        padding: 0 0 19px 0;
+    }
+
+    .result span {
+        padding: 0;
+    }
+
+    .result span::before {
+        content: '\A';
+        white-space: pre;
+    }
+
+    .result span::after {
+        content: '\A';
+        white-space: pre;
+    }
+
+}
+
+@media (max-width: 352px) {
+
+    .container {
+        max-width: 250px;
+        padding: 0 26px;
+    }
+
+    .title h1 {
+        font-size: 20px;
+    }
+
+    .title span {
+        font-size: 58px;
+    }
+
+}
