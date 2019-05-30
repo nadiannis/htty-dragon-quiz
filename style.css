@@ -3,6 +3,7 @@ body {
     padding: 0;
     font-family: 'Roboto', sans-serif;
     font-weight: 400;
+    background: #CC333F;
 }
 
 .container {
@@ -12,6 +13,10 @@ body {
     padding: 0 30px;
 
     transition: max-width .5s ease;
+}
+
+.top {
+    background: #fff;
 }
 
 .github-link {
@@ -60,10 +65,15 @@ body {
     font-size: 19px;
     font-weight: 300;
     color: #333;
-    padding: 0 0 25px 0;
+    padding: 0 0 5px 0;
     word-spacing: 2px;
 
     transition: font-size .5s ease;
+}
+
+.result p {
+    margin: 0;
+    padding: 19px 0;
 }
 
 .result span {
@@ -71,14 +81,15 @@ body {
     color: #CC333F;
     padding: 16px;
     font-family: 'Wendy One', sans-serif;
+
+    transition: font-size .5s ease;
 }
 
 .quiz {
     line-height: 1.5;
-    padding: 25px 0;
+    padding: 25px 0 50px 0;
     background: #CC333F;
     color: #efefef;
-    border-bottom: 5px solid #333;
 }
 
 .quiz h2 {
@@ -117,7 +128,7 @@ body {
 
 .quiz .submit-button {
     text-align: center;
-    margin: 15px 0 42px 0;
+    margin: 15px 0 12px 0;
 }
 
 .quiz .submit-button input {
