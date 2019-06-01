@@ -1,6 +1,7 @@
 const correctAnswers = ['C', 'A', 'B', 'A', 'B', 'C', 'C', 'B', 'B', 'B', 'B', 'C', 'A', 'A', 'B', 'C', 'B', 'B', 'C', 'B'];
 const form = document.querySelector('.quiz-form');
 const result = document.querySelector('.result');
+const retake = document.querySelector('.retake');
 
 form.addEventListener('submit', e => {
     e.preventDefault();
@@ -41,9 +42,9 @@ form.addEventListener('submit', e => {
             if (output === score) {
                 clearInterval(timer);
 
-                // setTimeout(() => {
-                //     retake.classList.remove('display-none');
-                // }, 350);
+                setTimeout(() => {
+                    retake.classList.remove('display-none');
+                }, 350);
             } else {
                 output++;
             }
@@ -62,4 +63,8 @@ form.addEventListener('submit', e => {
         submitButton.style.background = '#FFA59A';
         submitButton.disabled = true;
     }   
+});
+
+retake.querySelector('button').addEventListener('click', () => {
+    location.reload();
 });

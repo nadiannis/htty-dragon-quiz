@@ -99,6 +99,51 @@ body {
     transition: font-size .5s ease;
 }
 
+.retake {
+    text-align: center;
+    padding: 6px 0 47px 0;
+}
+
+.retake button {
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    padding: 14px 15px;
+    color: #4a4a4a;
+    cursor: pointer;
+    
+    -webkit-box-shadow: 0 3px 3px 0 rgba(0, 0, 0, .2);
+    box-shadow: 0 3px 3px 0 rgba(0, 0, 0, .2);
+
+    /* Reset all the default appearance */
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    -ms-appearance: none;
+    -o-appearance: none;
+    appearance: none;
+
+    -webkit-transition: all .3s ease;
+    -moz-transition: all .3s ease;
+    -ms-transition: all .3s ease;
+    -o-transition: all .3s ease;
+    transition: all .3s ease;
+}
+
+.retake button:hover {
+    background: #e3e3e3;
+
+    -webkit-box-shadow: 0 1px 0 1px rgba(0, 0, 0, .1);
+    box-shadow: 0 1px 0 1px rgba(0, 0, 0, .1);
+}
+
+.retake button:focus {
+    outline: none;
+    background: #d3d3d3;
+
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+
 .quiz {
     line-height: 1.5;
     padding: 25px 0 50px 0;
