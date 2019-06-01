@@ -190,6 +190,13 @@ body {
     box-shadow: none;
 }
 
+.quiz .error-message {
+    text-align: center;
+    margin: 0 0 20px 0;
+    font-size: 15px;
+    color: #ECD078;
+}
+
 .display-none {
     display: none;
 }
