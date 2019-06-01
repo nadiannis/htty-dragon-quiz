@@ -21,7 +21,7 @@ form.addEventListener('submit', e => {
         if (!form.nextElementSibling.classList.contains('display-none')) {
             form.nextElementSibling.classList.add('display-none');
         }
-        
+
         // Calculate the score
         let score = 0;
         userAnswers.forEach((answer, index) => {
@@ -48,5 +48,18 @@ form.addEventListener('submit', e => {
                 output++;
             }
         }, 15);
-    }
+
+        // Disable all radio buttons
+        const radioButtons = form.querySelectorAll('input[type="radio"]');
+        radioButtons.forEach(btn => {
+            btn.disabled = true;
+        });
+
+        document.querySelector('.quiz').style.color = '#FFA59A';
+
+        // Disable the submit button
+        const submitButton = form.querySelector('input[type="submit"]');
+        submitButton.style.background = '#FFA59A';
+        submitButton.disabled = true;
+    }   
 });
