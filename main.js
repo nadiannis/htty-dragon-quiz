@@ -44,7 +44,7 @@ form.addEventListener('submit', e => {
 
                 setTimeout(() => {
                     retake.classList.remove('display-none');
-                }, 350);
+                }, 320);
             } else {
                 output++;
             }
@@ -62,6 +62,18 @@ form.addEventListener('submit', e => {
         const submitButton = form.querySelector('input[type="submit"]');
         submitButton.style.background = '#FFA59A';
         submitButton.disabled = true;
+
+        // Mark the correct answer
+        const questionsOpt = [form.q1, form.q2, form.q3, form.q4, form.q5, form.q6, form.q7, form.q8, form.q9, form.q10, form.q11, form.q12, form.q13, form.q14, form.q15, form.q16, form.q17, form.q18, form.q19, form.q20];
+        questionsOpt.forEach((options, index) => {
+            if (options.value !== correctAnswers[index]) {
+                options.forEach(option => {
+                    if (option.value === correctAnswers[index]) {
+                        option.nextElementSibling.style.color = '#BADEFC';
+                    }
+                });
+            }
+        });
     }   
 });
 
