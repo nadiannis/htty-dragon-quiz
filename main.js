@@ -69,7 +69,7 @@ form.addEventListener('submit', e => {
             if (options.value !== correctAnswers[index]) {
                 options.forEach(option => {
                     if (option.value === correctAnswers[index]) {
-                        option.nextElementSibling.style.color = '#BADEFC';
+                        option.nextElementSibling.style.backgroundColor = '#333';
                     }
                 });
             }
@@ -79,4 +79,14 @@ form.addEventListener('submit', e => {
 
 retake.querySelector('button').addEventListener('click', () => {
     location.reload();
+});
+
+window.addEventListener('scroll', () => {
+    const docElm = document.documentElement;
+
+    let scrollTop = docElm.scrollTop;
+    let scrollHeight = docElm.scrollHeight - docElm.clientHeight;
+    let progress = 100 * scrollTop / scrollHeight;
+
+    document.querySelector('.progress').style.width = `${progress}%`;
 });
