@@ -1,22 +1,22 @@
 <h1 align="center">
   <br>
-  <a href="#"><img src="img/htty_dragon_quiz.png" alt="How to Train Your Dragon Quiz" width="400"></a>
+  <a href="https://annadineyl.github.io/htty-dragon-quiz"><img src="img/htty_dragon_quiz.png" alt="How to Train Your Dragon Quiz" width="400"></a>
 </h1>
 
 <h4 align="center">
   :dragon: A quiz to test your knowledge of "How to Train Your Dragon" movies :dragon:
   <br><br><br><br><br><br><br><br>
-  <a href="#"><img src="img/dragon_icon.png" alt="Dragon Icon" width="120"></a>
+  <a href="https://annadineyl.github.io/htty-dragon-quiz"><img src="img/dragon_icon.png" alt="Dragon Icon" width="120"></a>
 </h4>
 
 ---
 
-[![contributions welcome](https://img.shields.io/badge/contributions-welcome-blue.svg?style=for-the-badge&logo=appveyor)](https://github.com/annadineyl/bePro/issues)
+[![contributions welcome](https://img.shields.io/badge/contributions-welcome-blue.svg?style=for-the-badge&logo=appveyor)](https://github.com/annadineyl/htty-dragon-quiz/issues)
 
 ## Contents
 
 - [Description](#description)
-- [How to Use?](#how-to-use)
+- [Usage](#usage)
 - [Contributing](#contributing)
 - [Authors](#authors)
 - [License](#license)
@@ -31,8 +31,14 @@
 
 <br>
 
-## How to Use?
+## Usage
 
+#### > Go to the Page
+- You can just go to this <a href="https://annadineyl.github.io/htty-dragon-quiz">page</a>
+
+**-or-**
+
+#### > Run Locally
 1. Open in your computer by <a href="https://github.com/annadineyl/htty-dragon-quiz/releases">cloning/ downloading</a> the latest version of this repo, or clone it using git.
   ```
   git clone https://github.com/annadineyl/htty-dragon-quiz.git
@@ -46,6 +52,6 @@
 - **Annisa Nadia** - *Initial Work* - [annadineyl](https://github.com/annadineyl) (annisanadianeyla@gmail.com)
 
 ## License
-[![MIT license](https://img.shields.io/badge/License-MIT-blue.svg)](https://lbesson.mit-license.org/)
+[![MIT license](https://img.shields.io/badge/License-MIT-blue.svg?style=for-the-badge&logo=appveyor)](https://github.com/annadineyl/htty-dragon-quiz/blob/master/LICENSE)
 
 This project is [MIT licensed](https://github.com/annadineyl/htty-dragon-quiz/blob/master/LICENSE).
