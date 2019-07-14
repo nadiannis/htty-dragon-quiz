@@ -1,369 +1,369 @@
 body {
-    margin: 0;
-    padding: 0;
-    font-family: 'Roboto', sans-serif;
-    font-weight: 400;
-    background: #CC333F;
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  background: #cc333f;
 }
 
 .container {
-    width: 100%;
-    max-width: 960px;
-    margin: 0 auto;
-    padding: 0 30px;
+  width: 100%;
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 0 30px;
 
-    -webkit-transition: max-width .5s ease;
-    -moz-transition: max-width .5s ease;
-    -ms-transition: max-width .5s ease;
-    -o-transition: max-width .5s ease;
-    transition: max-width .5s ease;
+  -webkit-transition: max-width .5s ease;
+  -moz-transition: max-width .5s ease;
+  -ms-transition: max-width .5s ease;
+  -o-transition: max-width .5s ease;
+  transition: max-width .5s ease;
 }
 
 .progress {
-    position: fixed;
-    height: 2px;
-    background-color: #333;
-    z-index: 5;
+  position: fixed;
+  height: 2px;
+  background-color: #333;
+  z-index: 5;
 }
 
 .top {
-    background: #fff;
+  background: #fff;
 }
 
 .github-link {
-    position: absolute;
-    top: 0;
-    right: 0;
+  position: absolute;
+  top: 0;
+  right: 0;
 }
 
 .github-link .bg {
-    fill: #CC333F;
+  fill: #cc333f;
 }
 
 .github-link svg:hover .bg {
-    fill: #222;
+  fill: #222;
 }
 
 .github-link svg:active .bg {
-    fill: #222;
+  fill: #222;
 }
 
 .github-link svg .icon {
-    fill: #fff;
+  fill: #fff;
 }
 
 .title h1 {
-    font-family: 'Wendy One', sans-serif;
-    font-size: 28px;
-    text-align: center;
-    padding: 50px 0;
-    color: #222;
-    margin: 0;
+  font-family: 'Wendy One', sans-serif;
+  font-size: 28px;
+  text-align: center;
+  padding: 50px 0;
+  color: #222;
+  margin: 0;
 
-    -webkit-transition: all .5s ease;
-    -moz-transition: all .5s ease;
-    -ms-transition: all .5s ease;
-    -o-transition: all .5s ease;
-    transition: all .5s ease;
+  -webkit-transition: all .5s ease;
+  -moz-transition: all .5s ease;
+  -ms-transition: all .5s ease;
+  -o-transition: all .5s ease;
+  transition: all .5s ease;
 }
 
 .title span {
-    display: block;
-    font-size: 83px;
-    color: #CC333F;
+  display: block;
+  font-size: 83px;
+  color: #cc333f;
 
-    -webkit-transition: font-size .5s ease;
-    -moz-transition: font-size .5s ease;
-    -ms-transition: font-size .5s ease;
-    -o-transition: font-size .5s ease;
-    transition: font-size .5s ease;
+  -webkit-transition: font-size .5s ease;
+  -moz-transition: font-size .5s ease;
+  -ms-transition: font-size .5s ease;
+  -o-transition: font-size .5s ease;
+  transition: font-size .5s ease;
 }
 
 .result {
-    text-align: center;
-    font-size: 19px;
-    font-weight: 300;
-    color: #333;
-    padding: 0 0 5px 0;
-    word-spacing: 2px;
+  text-align: center;
+  font-size: 19px;
+  font-weight: 300;
+  color: #333;
+  padding: 0 0 5px 0;
+  word-spacing: 2px;
 }
 
 .result p {
-    margin: 0;
-    padding: 19px 0;
+  margin: 0;
+  padding: 19px 0;
 }
 
 .result span {
-    font-size: 57px;
-    color: #CC333F;
-    padding: 16px;
-    font-family: 'Wendy One', sans-serif;
+  font-size: 57px;
+  color: #cc333f;
+  padding: 16px;
+  font-family: 'Wendy One', sans-serif;
 
-    -webkit-transition: font-size .5s ease;
-    -moz-transition: font-size .5s ease;
-    -ms-transition: font-size .5s ease;
-    -o-transition: font-size .5s ease;   
-    transition: font-size .5s ease;
+  -webkit-transition: font-size .5s ease;
+  -moz-transition: font-size .5s ease;
+  -ms-transition: font-size .5s ease;
+  -o-transition: font-size .5s ease;   
+  transition: font-size .5s ease;
 }
 
 .retake {
-    text-align: center;
-    padding: 6px 0 47px 0;
+  text-align: center;
+  padding: 6px 0 47px 0;
 }
 
 .retake button {
-    font-size: 16px;
-    border: none;
-    border-radius: 5px;
-    padding: 14px 15px;
-    color: #4a4a4a;
-    cursor: pointer;
-    
-    -webkit-box-shadow: 0 3px 3px 0 rgba(0, 0, 0, .2);
-    box-shadow: 0 3px 3px 0 rgba(0, 0, 0, .2);
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  padding: 14px 15px;
+  color: #4a4a4a;
+  cursor: pointer;
+  
+  -webkit-box-shadow: 0 3px 3px 0 rgba(0, 0, 0, .2);
+  box-shadow: 0 3px 3px 0 rgba(0, 0, 0, .2);
 
-    /* Reset all the default appearance */
-    -webkit-appearance: none;
-    -moz-appearance: none;
-    -ms-appearance: none;
-    -o-appearance: none;
-    appearance: none;
+  /* Reset all the default appearance */
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  -o-appearance: none;
+  appearance: none;
 
-    -webkit-transition: all .3s ease;
-    -moz-transition: all .3s ease;
-    -ms-transition: all .3s ease;
-    -o-transition: all .3s ease;
-    transition: all .3s ease;
+  -webkit-transition: all .3s ease;
+  -moz-transition: all .3s ease;
+  -ms-transition: all .3s ease;
+  -o-transition: all .3s ease;
+  transition: all .3s ease;
 }
 
 .retake button:hover {
-    background: #e3e3e3;
+  background: #e3e3e3;
 
-    -webkit-box-shadow: 0 1px 0 1px rgba(0, 0, 0, .1);
-    box-shadow: 0 1px 0 1px rgba(0, 0, 0, .1);
+  -webkit-box-shadow: 0 1px 0 1px rgba(0, 0, 0, .1);
+  box-shadow: 0 1px 0 1px rgba(0, 0, 0, .1);
 }
 
 .retake button:focus {
-    outline: none;
-    background: #d3d3d3;
+  outline: none;
+  background: #d3d3d3;
 
-    -webkit-box-shadow: none;
-    box-shadow: none;
+  -webkit-box-shadow: none;
+  box-shadow: none;
 }
 
 .quiz {
-    line-height: 1.5;
-    padding: 25px 0 50px 0;
-    background: #CC333F;
-    color: #efefef;
+  line-height: 1.5;
+  padding: 25px 0 50px 0;
+  background: #cc333f;
+  color: #efefef;
 }
 
 .quiz h2 {
-    font-size: 30px;
-    margin: 45px 0;
+  font-size: 30px;
+  margin: 45px 0;
 
-    -webkit-transition: font-size .5s ease;
-    -moz-transition: font-size .5s ease;
-    -ms-transition: font-size .5s ease;
-    -o-transition: font-size .5s ease;
-    transition: font-size .5s ease;
+  -webkit-transition: font-size .5s ease;
+  -moz-transition: font-size .5s ease;
+  -ms-transition: font-size .5s ease;
+  -o-transition: font-size .5s ease;
+  transition: font-size .5s ease;
 }
 
 .quiz .quiz-form .question {
-    margin: 57px 0;
+  margin: 57px 0;
 
-    -webkit-transition: all .5s ease;
-    -moz-transition: all .5s ease;
-    -ms-transition: all .5s ease;
-    -o-transition: all .5s ease;
-    transition: all .5s ease;
+  -webkit-transition: all .5s ease;
+  -moz-transition: all .5s ease;
+  -ms-transition: all .5s ease;
+  -o-transition: all .5s ease;
+  transition: all .5s ease;
 }
 
 .quiz .quiz-form .question p {
-    font-size: 22px;
-    margin-bottom: 16px;
+  font-size: 22px;
+  margin-bottom: 16px;
 
-    -webkit-transition: font-size .5s ease;
-    -moz-transition: font-size .5s ease;
-    -ms-transition: font-size .5s ease;
-    -o-transition: font-size .5s ease;
-    transition: font-size .5s ease;
+  -webkit-transition: font-size .5s ease;
+  -moz-transition: font-size .5s ease;
+  -ms-transition: font-size .5s ease;
+  -o-transition: font-size .5s ease;
+  transition: font-size .5s ease;
 }
 
 .quiz .quiz-form .question label {
-    font-size: 18px;
-    cursor: pointer;
-    padding: 3px 5px;
+  font-size: 18px;
+  cursor: pointer;
+  padding: 3px 5px;
 }
 
 .quiz .quiz-form .option {
-    margin: 7px;
-    padding-left: 11px;
+  margin: 7px;
+  padding-left: 11px;
 }
 
 .quiz .quiz-form .option input[type="radio"] {
-    cursor: pointer;
+  cursor: pointer;
 }
 
 .quiz .submit-button {
-    text-align: center;
-    margin: 15px 0 12px 0;
+  text-align: center;
+  margin: 15px 0 12px 0;
 }
 
 .quiz .submit-button input {
-    font-size: 18px;
-    border: none;
-    border-radius: 5px;
-    padding: 14px 18px;
-    color: #4a4a4a;
-    cursor: pointer;
+  font-size: 18px;
+  border: none;
+  border-radius: 5px;
+  padding: 14px 18px;
+  color: #4a4a4a;
+  cursor: pointer;
 
-    -webkit-box-shadow: 0 3px 6px 0 rgba(0, 0, 0, .2);
-    box-shadow: 0 3px 6px 0 rgba(0, 0, 0, .2);
+  -webkit-box-shadow: 0 3px 6px 0 rgba(0, 0, 0, .2);
+  box-shadow: 0 3px 6px 0 rgba(0, 0, 0, .2);
 
-    -webkit-transition: all .5s ease;
-    -moz-transition: all .5s ease;
-    -ms-transition: all .5s ease;
-    -o-transition: all .5s ease;
-    transition: all .5s ease;
+  -webkit-transition: all .5s ease;
+  -moz-transition: all .5s ease;
+  -ms-transition: all .5s ease;
+  -o-transition: all .5s ease;
+  transition: all .5s ease;
 }
 
 .quiz .submit-button input:hover {
-    background: #e3e3e3;
+  background: #e3e3e3;
 
-    -webkit-box-shadow: none;
-    box-shadow: none;
+  -webkit-box-shadow: none;
+  box-shadow: none;
 }
 
 .quiz .submit-button input:focus {
-    outline: none;
-    background: #d3d3d3;
+  outline: none;
+  background: #d3d3d3;
 
-    -webkit-box-shadow: none;
-    box-shadow: none;
+  -webkit-box-shadow: none;
+  box-shadow: none;
 }
 
 .quiz .error-message {
-    text-align: center;
-    margin: 0 0 20px 0;
-    font-size: 15px;
-    color: #ECD078;
+  text-align: center;
+  margin: 0 0 20px 0;
+  font-size: 15px;
+  color: #ecd078;
 }
 
 .display-none {
-    display: none;
+  display: none;
 }
 
 .m-scene .scene-element {
-    -webkit-animation-duration: 0.4s;
-    animation-duration: 0.4s;
+  -webkit-animation-duration: .4s;
+  animation-duration: .4s;
 
-    -webkit-transition-timing-function: ease-in;
-    -o-transition-timing-function: ease-in;
-    transition-timing-function: ease-in;
+  -webkit-transition-timing-function: ease-in;
+  -o-transition-timing-function: ease-in;
+  transition-timing-function: ease-in;
 
-    -webkit-animation-fill-mode: both;
-    animation-fill-mode: both;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
 }
 
 .m-scene .scene-element--fadein {
-    -webkit-animation-name: fadeIn;
-    animation-name: fadeIn;
+  -webkit-animation-name: fadeIn;
+  animation-name: fadeIn;
 }
 
 .m-scene .scene-element--fadeinup {
-    -webkit-animation-name: fadeInUp;
-    animation-name: fadeInUp;
+  -webkit-animation-name: fadeInUp;
+  animation-name: fadeInUp;
 }
 
 .m-scene .scene-element--fadeindown {
-    -webkit-animation-name: fadeInDown;
-    animation-name: fadeInDown;
+  -webkit-animation-name: fadeInDown;
+  animation-name: fadeInDown;
 }
 
 
 /* Keyframes */
 
 @-webkit-keyframes fadeIn {
-    0% {
-        opacity: 0;
-    }
+  0% {
+    opacity: 0;
+  }
 
-    100% {
-        opacity: 1;
-    }
+  100% {
+    opacity: 1;
+  }
 }
 
 @keyframes fadeIn {
-    0% {
-        opacity: 0;
-    }
+  0% {
+    opacity: 0;
+  }
 
-    100% {
-        opacity: 1;
-    }
+  100% {
+    opacity: 1;
+  }
 }
 
 @-webkit-keyframes fadeInUp {
-    0% {
-        opacity: 0;
+  0% {
+    opacity: 0;
 
-        -webkit-transform: translate3d(0, 100%, 0);
-        transform: translate3d(0, 100%, 0);
-    }
+    -webkit-transform: translate3d(0, 100%, 0);
+    transform: translate3d(0, 100%, 0);
+  }
 
-    100% {
-        opacity: 1;
+  100% {
+    opacity: 1;
 
-        -webkit-transform: none;
-        transform: none;
-    }
+    -webkit-transform: none;
+    transform: none;
+  }
 }
 
 @keyframes fadeInUp {
-    0% {
-        opacity: 0;
+  0% {
+    opacity: 0;
 
-        -webkit-transform: translate3d(0, 100%, 0);
-        transform: translate3d(0, 100%, 0);
-    }
+    -webkit-transform: translate3d(0, 100%, 0);
+    transform: translate3d(0, 100%, 0);
+  }
 
-    100% {
-        opacity: 1;
+  100% {
+    opacity: 1;
 
-        -webkit-transform: none;
-        transform: none;
-    }
+    -webkit-transform: none;
+    transform: none;
+  }
 }
 
 @-webkit-keyframes fadeInDown {
-    0% {
-        opacity: 0;
-        -webkit-transform: translate3d(0, -5%, 0);
-        transform: translate3d(0, -5%, 0);
-    }
+  0% {
+    opacity: 0;
+    -webkit-transform: translate3d(0, -5%, 0);
+    transform: translate3d(0, -5%, 0);
+  }
 
-    100% {
-        opacity: 1;
+  100% {
+    opacity: 1;
 
-        -webkit-transform: translate3d(0, 0, 0);
-        transform: translate3d(0, 0, 0);
-    }
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
 }
 
 @keyframes fadeInDown {
-    0% {
-        opacity: 0;
-        -webkit-transform: translate3d(0, -5%, 0);
-        transform: translate3d(0, -5%, 0);
-    }
+  0% {
+    opacity: 0;
+    -webkit-transform: translate3d(0, -5%, 0);
+    transform: translate3d(0, -5%, 0);
+  }
 
-    100% {
-        opacity: 1;
+  100% {
+    opacity: 1;
 
-        -webkit-transform: translate3d(0, 0, 0);
-        transform: translate3d(0, 0, 0);
-    }
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
 }
 
 
@@ -371,123 +371,123 @@ body {
 
 @media (min-width: 480px) {
 
-    .container {
-        max-width: 400px;
-    }
+  .container {
+    max-width: 400px;
+  }
 
 }
 
 @media (min-width: 530px) {
 
-    .container {
-        max-width: 450px;
-    }
+  .container {
+    max-width: 450px;
+  }
 
 }
 
 @media (min-width: 645px) {
 
-    .container {
-        max-width: 540px;
-    }
+  .container {
+    max-width: 540px;
+  }
 
 }
 
 @media (min-width: 850px) {
 
-    .container {
-        max-width: 720px;
-    }
+  .container {
+    max-width: 720px;
+  }
 
 }
 
 @media (min-width: 1110px) {
 
-    .container {
-        max-width: 960px;
-    }
+  .container {
+    max-width: 960px;
+  }
 
 }
 
 @media (max-width: 480px) {
 
-    .container {
-        max-width: 350px;
-    }
+  .container {
+    max-width: 350px;
+  }
 
-    .title h1 {
-        font-size: 21px;
-        padding: 50px 0;
-    }
+  .title h1 {
+    font-size: 21px;
+    padding: 50px 0;
+  }
 
-    .title span {
-        font-size: 70px;
-    }
+  .title span {
+    font-size: 70px;
+  }
 
-    .quiz h2 {
-        font-size: 25px;
-        margin: 35px 0;
-    }
+  .quiz h2 {
+    font-size: 25px;
+    margin: 35px 0;
+  }
 
-    .quiz .quiz-form .question p {
-        font-size: 20px;
-        margin-bottom: 12px;
-    }
+  .quiz .quiz-form .question p {
+    font-size: 20px;
+    margin-bottom: 12px;
+  }
 
-    .quiz .submit-button input {
-        font-size: 17px;
-    }
+  .quiz .submit-button input {
+    font-size: 17px;
+  }
 
 }
 
 @media (max-width: 429px) {
 
-    .container {
-        max-width: 275px;
-    }
+  .container {
+    max-width: 275px;
+  }
 
-    .title h1 {
-        font-size: 21px;
-        padding: 50px 0 45px 0;
-    }
+  .title h1 {
+    font-size: 21px;
+    padding: 50px 0 45px 0;
+  }
 
-    .title span {
-        font-size: 60px;
-    }
+  .title span {
+    font-size: 60px;
+  }
 
-    .result p {
-        padding: 0 0 19px 0;
-    }
+  .result p {
+    padding: 0 0 19px 0;
+  }
 
-    .result span {
-        padding: 0;
-    }
+  .result span {
+    padding: 0;
+  }
 
-    .result span::before {
-        content: '\A';
-        white-space: pre;
-    }
+  .result span::before {
+    content: '\A';
+    white-space: pre;
+  }
 
-    .result span::after {
-        content: '\A';
-        white-space: pre;
-    }
+  .result span::after {
+    content: '\A';
+    white-space: pre;
+  }
 
 }
 
 @media (max-width: 352px) {
 
-    .container {
-        max-width: 250px;
-        padding: 0 26px;
-    }
+  .container {
+    max-width: 250px;
+    padding: 0 26px;
+  }
 
-    .title h1 {
-        font-size: 20px;
-    }
+  .title h1 {
+    font-size: 20px;
+  }
 
-    .title span {
-        font-size: 58px;
-    }
+  .title span {
+    font-size: 58px;
+  }
 
 }
