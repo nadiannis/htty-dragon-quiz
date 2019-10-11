@@ -1,7 +1,7 @@
 const correctAnswers = ['C', 'A', 'B', 'A', 'B', 'C', 'C', 'B', 'B', 'B', 'B', 'C', 'A', 'A', 'B', 'C', 'B', 'B', 'C', 'B'];
-const form = document.querySelector('.quiz-form');
-const result = document.querySelector('.result');
-const retake = document.querySelector('.retake');
+const form = document.querySelector('.quiz__form');
+const result = document.querySelector('.top__result');
+const retake = document.querySelector('.top__retake');
 
 form.addEventListener('submit', e => {
   e.preventDefault();
@@ -47,7 +47,7 @@ form.addEventListener('submit', e => {
     }, 15);
 
     // Disable all radio buttons
-    const radioButtons = form.querySelectorAll('input[type="radio"]');
+    const radioButtons = form.querySelectorAll('.quiz__option-btn');
     radioButtons.forEach(btn => {
       btn.disabled = true;
     });
@@ -55,7 +55,7 @@ form.addEventListener('submit', e => {
     document.querySelector('.quiz').style.color = '#FFA59A';
 
     // Disable the submit button
-    const submitButton = form.querySelector('input[type="submit"]');
+    const submitButton = form.querySelector('.quiz__submit-btn');
     submitButton.style.background = '#FFA59A';
     submitButton.disabled = true;
 

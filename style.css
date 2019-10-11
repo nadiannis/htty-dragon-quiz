@@ -1,9 +1,29 @@
+/* 
+  Table of Contents
+  1. Global Styles
+  2. Layout
+  3. Components
+     3.1. Links
+     3.2. Titles
+     3.3. Buttons
+     3.4. Result
+     3.5. Quiz Problem
+     3.6. Quiz Error
+  4. Animations
+     4.1. Styles
+     4.2. Keyframes
+  5. Media Queries
+*/
+
+/*============= 
+  Global Styles
+  =============*/
+
 body {
   margin: 0;
   padding: 0;
   font-family: 'Roboto', sans-serif;
   font-weight: 400;
-  background: #cc333f;
 }
 
 .container {
@@ -19,6 +39,12 @@ body {
   transition: max-width .5s ease;
 }
 
+.display-none {
+  display: none;
+}
+
+/* ======================== */
+
 .progress {
   position: fixed;
   height: 2px;
@@ -26,40 +52,26 @@ body {
   z-index: 5;
 }
 
-.top {
-  background: #fff;
+body, 
+.quiz {
+  background: #cc333f;
 }
 
-.github-link {
-  position: absolute;
-  top: 0;
-  right: 0;
-}
-
-.github-link .bg {
-  fill: #cc333f;
-}
-
-.github-link svg:hover .bg {
-  fill: #222;
-}
-
-.github-link svg:active .bg {
-  fill: #222;
-}
-
-.github-link svg .icon {
-  fill: #fff;
-}
-
-.title h1 {
+.top__title-h1, 
+.top__result-span {
   font-family: 'Wendy One', sans-serif;
-  font-size: 28px;
-  text-align: center;
-  padding: 50px 0;
-  color: #222;
-  margin: 0;
+}
 
+.top__title, .top__result, .top__retake,
+.quiz__submit, .quiz__error-message {
+  text-align: center;
+}
+
+.top__title-h1,
+.top__result-span,
+.quiz__problem, 
+.quiz__question,  
+.quiz__submit-btn {
   -webkit-transition: all .5s ease;
   -moz-transition: all .5s ease;
   -ms-transition: all .5s ease;
@@ -67,11 +79,56 @@ body {
   transition: all .5s ease;
 }
 
-.title span {
-  display: block;
-  font-size: 83px;
-  color: #cc333f;
+/*====== 
+  Layout
+  ======*/
 
+.top {
+  background: #fff;
+}
+
+.quiz {
+  line-height: 1.5;
+  padding: 25px 0 50px 0;
+  color: #efefef;
+}
+
+/*========== 
+  Components
+  ==========*/
+
+  /* Links */
+
+.top__github-link {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.top__github-bg {
+  fill: #cc333f;
+}
+
+svg:hover .top__github-bg,
+svg:active .top__github-bg {
+  fill: #222;
+}
+
+.top__github-icon {
+  fill: #fff;
+}
+
+  /* Titles */
+
+.top__title-h1 {
+  font-size: 28px;
+  padding: 50px 0;
+  color: #222;
+  margin: 0;
+}
+
+.top__title-span,
+.quiz__title {
   -webkit-transition: font-size .5s ease;
   -moz-transition: font-size .5s ease;
   -ms-transition: font-size .5s ease;
@@ -79,39 +136,24 @@ body {
   transition: font-size .5s ease;
 }
 
-.result {
-  text-align: center;
-  font-size: 19px;
-  font-weight: 300;
-  color: #333;
-  padding: 0 0 5px 0;
-  word-spacing: 2px;
-}
-
-.result p {
-  margin: 0;
-  padding: 19px 0;
-}
-
-.result span {
-  font-size: 57px;
+.top__title-span {
   color: #cc333f;
-  padding: 16px;
-  font-family: 'Wendy One', sans-serif;
-
-  -webkit-transition: font-size .5s ease;
-  -moz-transition: font-size .5s ease;
-  -ms-transition: font-size .5s ease;
-  -o-transition: font-size .5s ease;   
-  transition: font-size .5s ease;
+  display: block;
+  font-size: 83px;
 }
 
-.retake {
-  text-align: center;
+.quiz__title {
+  font-size: 30px;
+  margin: 45px 0;
+}
+
+  /* Buttons */
+
+.top__retake {
   padding: 6px 0 47px 0;
 }
 
-.retake button {
+.top__retake-btn {
   font-size: 16px;
   border: none;
   border-radius: 5px;
@@ -136,81 +178,15 @@ body {
   transition: all .3s ease;
 }
 
-.retake button:hover {
-  background: #e3e3e3;
-
-  -webkit-box-shadow: 0 1px 0 1px rgba(0, 0, 0, .1);
-  box-shadow: 0 1px 0 1px rgba(0, 0, 0, .1);
-}
-
-.retake button:focus {
-  outline: none;
-  background: #d3d3d3;
-
-  -webkit-box-shadow: none;
-  box-shadow: none;
-}
-
-.quiz {
-  line-height: 1.5;
-  padding: 25px 0 50px 0;
-  background: #cc333f;
-  color: #efefef;
-}
-
-.quiz h2 {
-  font-size: 30px;
-  margin: 45px 0;
-
-  -webkit-transition: font-size .5s ease;
-  -moz-transition: font-size .5s ease;
-  -ms-transition: font-size .5s ease;
-  -o-transition: font-size .5s ease;
-  transition: font-size .5s ease;
-}
-
-.quiz .quiz-form .question {
-  margin: 57px 0;
-
-  -webkit-transition: all .5s ease;
-  -moz-transition: all .5s ease;
-  -ms-transition: all .5s ease;
-  -o-transition: all .5s ease;
-  transition: all .5s ease;
-}
-
-.quiz .quiz-form .question p {
-  font-size: 22px;
-  margin-bottom: 16px;
-
-  -webkit-transition: font-size .5s ease;
-  -moz-transition: font-size .5s ease;
-  -ms-transition: font-size .5s ease;
-  -o-transition: font-size .5s ease;
-  transition: font-size .5s ease;
-}
-
-.quiz .quiz-form .question label {
-  font-size: 18px;
-  cursor: pointer;
-  padding: 3px 5px;
-}
-
-.quiz .quiz-form .option {
-  margin: 7px;
-  padding-left: 11px;
-}
-
-.quiz .quiz-form .option input[type="radio"] {
+.quiz__option-btn {
   cursor: pointer;
 }
 
-.quiz .submit-button {
-  text-align: center;
+.quiz__submit {
   margin: 15px 0 12px 0;
 }
 
-.quiz .submit-button input {
+.quiz__submit-btn {
   font-size: 18px;
   border: none;
   border-radius: 5px;
@@ -220,41 +196,93 @@ body {
 
   -webkit-box-shadow: 0 3px 6px 0 rgba(0, 0, 0, .2);
   box-shadow: 0 3px 6px 0 rgba(0, 0, 0, .2);
-
-  -webkit-transition: all .5s ease;
-  -moz-transition: all .5s ease;
-  -ms-transition: all .5s ease;
-  -o-transition: all .5s ease;
-  transition: all .5s ease;
 }
 
-.quiz .submit-button input:hover {
+.top__retake-btn:hover, 
+.quiz__submit-btn:hover {
   background: #e3e3e3;
-
-  -webkit-box-shadow: none;
-  box-shadow: none;
 }
 
-.quiz .submit-button input:focus {
+.top__retake-btn:focus, 
+.quiz__submit-btn:focus {
   outline: none;
   background: #d3d3d3;
+}
 
+.top__retake-btn:hover {
+  -webkit-box-shadow: 0 1px 0 1px rgba(0, 0, 0, .1);
+  box-shadow: 0 1px 0 1px rgba(0, 0, 0, .1);
+}
+
+.top__retake-btn:focus {
   -webkit-box-shadow: none;
   box-shadow: none;
 }
 
-.quiz .error-message {
-  text-align: center;
+.quiz__submit-btn:hover,
+.quiz__submit-btn:focus {
+  -webkit-box-shadow: none;
+  box-shadow: none;
+} 
+
+  /* Result */
+
+.top__result {
+  font-size: 19px;
+  font-weight: 300;
+  color: #333;
+  padding: 0 0 5px 0;
+  word-spacing: 2px;
+}
+
+.top__result-text {
+  margin: 0;
+  padding: 19px 0;
+}
+
+.top__result-span {
+  font-size: 57px;
+  color: #cc333f;
+  padding: 16px;
+}
+
+  /* Quiz Problem */
+
+.quiz__problem {
+  margin: 57px 0;
+}
+
+.quiz__question {
+  font-size: 22px;
+  margin-bottom: 16px;
+}
+
+.quiz__option {
+  margin: 7px;
+  padding-left: 11px;
+}
+
+.quiz__option-label {
+  font-size: 18px;
+  cursor: pointer;
+  padding: 3px 5px;
+}
+
+  /* Quiz Error */
+
+.quiz__error-message {
   margin: 0 0 20px 0;
   font-size: 15px;
   color: #ecd078;
 }
 
-.display-none {
-  display: none;
-}
+/*========== 
+  Animations
+  ==========*/
 
-.m-scene .scene-element {
+  /* Styles */
+
+.scene-element {
   -webkit-animation-duration: .4s;
   animation-duration: .4s;
 
@@ -266,23 +294,22 @@ body {
   animation-fill-mode: both;
 }
 
-.m-scene .scene-element--fadein {
+.scene-element--fadein {
   -webkit-animation-name: fadeIn;
   animation-name: fadeIn;
 }
 
-.m-scene .scene-element--fadeinup {
+.scene-element--fadeinup {
   -webkit-animation-name: fadeInUp;
   animation-name: fadeInUp;
 }
 
-.m-scene .scene-element--fadeindown {
+.scene-element--fadeindown {
   -webkit-animation-name: fadeInDown;
   animation-name: fadeInDown;
 }
 
-
-/* Keyframes */
+  /* Keyframes */
 
 @-webkit-keyframes fadeIn {
   0% {
@@ -367,7 +394,9 @@ body {
 }
 
 
-/* MEDIA QUERIES */
+/*============= 
+  Media Queries
+  =============*/
 
 @media (min-width: 480px) {
 
@@ -415,26 +444,26 @@ body {
     max-width: 350px;
   }
 
-  .title h1 {
+  .top__title-h1 {
     font-size: 21px;
     padding: 50px 0;
   }
 
-  .title span {
+  .top__title-span {
     font-size: 70px;
   }
 
-  .quiz h2 {
+  .quiz__title {
     font-size: 25px;
     margin: 35px 0;
   }
 
-  .quiz .quiz-form .question p {
+  .quiz__question {
     font-size: 20px;
     margin-bottom: 12px;
   }
 
-  .quiz .submit-button input {
+  .quiz__submit-btn {
     font-size: 17px;
   }
 
@@ -446,29 +475,28 @@ body {
     max-width: 275px;
   }
 
-  .title h1 {
-    font-size: 21px;
+  .top__title-h1 {
     padding: 50px 0 45px 0;
   }
 
-  .title span {
+  .top__title-span {
     font-size: 60px;
   }
 
-  .result p {
+  .top__result-text {
     padding: 0 0 19px 0;
   }
 
-  .result span {
+  .top__result-span {
     padding: 0;
   }
 
-  .result span::before {
+  .top__result-span::before {
     content: '\A';
     white-space: pre;
   }
 
-  .result span::after {
+  .top__result-span::after {
     content: '\A';
     white-space: pre;
   }
@@ -482,11 +510,11 @@ body {
     padding: 0 26px;
   }
 
-  .title h1 {
+  .top__title-h1 {
     font-size: 20px;
   }
 
-  .title span {
+  .top__title-span {
     font-size: 58px;
   }
 
