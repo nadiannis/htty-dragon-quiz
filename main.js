@@ -75,6 +75,11 @@ form.addEventListener('submit', e => {
 
 retake.querySelector('button').addEventListener('click', () => {
   location.reload();
+
+  const radioButtons = form.querySelectorAll('.quiz__option-btn');
+  radioButtons.forEach(btn => {
+    btn.checked = false;
+  });
 });
 
 window.addEventListener('scroll', () => {
